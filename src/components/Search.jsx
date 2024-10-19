@@ -8,7 +8,7 @@ const Search = ({ welcome, heading, button, img, className }) => {
     const navigate = useNavigate();
   const condition = () => {
     if (button === "+ New Incidents") {
-      navigate("/incidents/stepbar");
+      navigate("/incidents/incidentBar");
     } else {
       return null;
     }
