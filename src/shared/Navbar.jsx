@@ -1,6 +1,12 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import { IoMdClose } from "react-icons/io";
+import { FaBars } from "react-icons/fa6";
 import { Link, NavLink } from "react-router-dom";
+
+import logo from "../assets/images/logo.png";
+import notification from "../assets/images/notification.png";
+import loginImg from "../assets/images/login-logo.png";
 
 const navbarList = [
   {
@@ -12,8 +18,8 @@ const navbarList = [
     to: "/Incidents",
   },
   {
-    label: "Locations",
-    to: "/Locations",
+    label: "Location",
+    to: "/Location",
   },
   {
     label: "Activities",
@@ -46,7 +52,7 @@ const Navbar = () => {
         <nav className="flex justify-around items-center bg-whiteLight py-2 border border-b-black">
           <div>
             <Link to="/">
-              <img src="/logo.png" alt="logo" />
+              <img src={logo} alt="logo" />
             </Link>
           </div>
           <div>
@@ -70,8 +76,8 @@ const Navbar = () => {
               {toggle ? <IoMdClose /> : <FaBars />}
             </button>
   
-            <img src="/notification.png" alt="notification" />
-            <img src="/login-logo.png" alt="login-logo" />
+            <img src={notification} alt="notification-img" />
+            <img src={loginImg} alt="login" />
             <div className="md:flex flex-col hidden">
               <p className="text-grayBold text-14 ">Usman Zafar</p>
               <p className="text-grayBold text-14 ">usmanzafar@gmail.com</p>
