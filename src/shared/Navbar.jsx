@@ -7,6 +7,7 @@ import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 import notification from "../assets/images/notification.png";
 import loginImg from "../assets/images/login-logo.png";
+import MobileMenu from "../components/MobileMenu";
 
 const navbarList = [
   {
@@ -38,7 +39,7 @@ const navbarList = [
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
-    const handle = () => {
+    const handleMenu = () => {
       setToggle(!toggle);
     };
   
@@ -61,7 +62,7 @@ const Navbar = () => {
                 <li key={i}>
                   <NavLink
                     to={to}
-                    onClick={handle}
+                    onClick={handleMenu}
                     className="text-14 text-grayBold"
                   >
                     {label}
@@ -72,7 +73,7 @@ const Navbar = () => {
           </div>
   
           <div className="flex justify-center items-center gap-3">
-            <button className="md:hidden inline-block" onClick={handle}>
+            <button className="md:hidden inline-block" onClick={handleMenu}>
               {toggle ? <IoMdClose /> : <FaBars />}
             </button>
   
@@ -84,7 +85,7 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
-        {/* <MobileMenu toggle={toggle} handle={handle} /> */}
+        <MobileMenu toggle={toggle} handle={handleMenu} />
       </>
     );
   };
