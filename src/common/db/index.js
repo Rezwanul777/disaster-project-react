@@ -25,6 +25,10 @@ import newIncidentsImg15 from "../../assets/images/newIncidentsImg15.png"
 import newIncidentsImg16 from "../../assets/images/newIncidentsImg16.png"
 import newIncidentsImg17 from "../../assets/images/newIncidentsImg17.png"
 import newIncidentsImg18 from "../../assets/images/newIncidentsImg18.png"
+import locationImg1 from "../../assets/images/locationImg1.png"
+import locationImg2 from "../../assets/images/locationImg2.png"
+import locationImg3 from "../../assets/images/locationImg3.png"
+import locationImg4 from "../../assets/images/locationImg4.png"
 
 export const CardItems = [
     {
@@ -155,6 +159,62 @@ export const CardItems = [
     {
       img: newIncidentsImg18,
       title: "Wildfire",
+    },
+  ];
+
+  export const locationItems = [
+    {
+      img: locationImg1,
+      title: "Whitechapel Rd.",
+      description: "Tulare County,  Los Angles, CA 23415",
+      amount: "$1,456,654.00",
+    },
+    {
+      img: locationImg2,
+      title: "Whitechapel Rd.",
+      description: "Tulare County,  Los Angles, CA 23415",
+      amount: "$1,456,654.00",
+    },
+    {
+      img: locationImg3,
+      title: "Whitechapel Rd.",
+      description: "Tulare County,  Los Angles, CA 23415",
+      amount: "$1,456,654.00",
+    },
+    {
+      img: locationImg4,
+      title: "Whitechapel Rd.",
+      description: "Tulare County,  Los Angles, CA 23415",
+      amount: "$1,456,654.00",
+    },
+  ];
+
+  export const locationsData = [
+    {
+      img: locationImg1,
+      title: "Activity name",
+      locationName: "Location name 16.12212, -122.1424",
+      amount: "$1,456,654.00",
+    },
+    {
+      img: locationImg2,
+      title: "Activity name",
+      locationName: "Location name 16.12212, -122.1424",
+      amount: "$1,456,654.00",
+    },
+  ];
+  export const locationsDocs = [
+    {
+      img: locationImg3,
+      title: "Activity name",
+      locationName: "Location name 16.12212, -122.1424",
+      amount: "$1,456,654.00",
+    },
+    {
+      img: locationImg4,
+      title: "Activity name",
+      locationName: "Location name 16.12212, -122.1424",
+      amount: "$1,456,654.00",
     },
   ];
   

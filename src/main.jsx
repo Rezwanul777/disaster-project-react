@@ -45,12 +45,12 @@ const router = createBrowserRouter([
       element:<NewIncidentLocation />
     },
     {
-      path: "/location",
+      path: "/locations",
       element: <Location/>,
     },
     // {
     //   path: "/shop",
-    //   element: <Shop/>,
+    //   element: <Shop/>,n
     // },
   ],
 }
