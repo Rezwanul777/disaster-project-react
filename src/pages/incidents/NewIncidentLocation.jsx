@@ -9,7 +9,7 @@ const NewIncidentLocation = () => {
       navigate("/incidents/incidentBar/newIncidents/nextPartIncidents");
     };
     const finished = () => {
-      navigate("/Locations");
+      navigate("/Location");
     };
     return (
       <div>

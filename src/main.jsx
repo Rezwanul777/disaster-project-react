@@ -14,10 +14,12 @@ import IncidentBar from './pages/incidents/IncidentBar.jsx';
 import NewIncidents from './pages/incidents/NewIncidents.jsx';
 import NextPartIncidents from './pages/incidents/NextPartIncidents.jsx';
 import NewIncidentLocation from './pages/incidents/NewIncidentLocation.jsx';
+import ErrorPage from './pages/error/ErrorPage.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+    errorElement:<ErrorPage/>,
   
   children: [
     {
@@ -45,9 +47,9 @@ const router = createBrowserRouter([
       element:<NewIncidentLocation />
     },
     {
-      path: "/locations",
+      path: "/location",
       element: <Location/>,
-    },
+    }
     // {
     //   path: "/shop",
     //   element: <Shop/>,n
