@@ -2,16 +2,25 @@ import { useNavigate } from "react-router-dom";
 import Button from "../../common/Button"
 import { IncidentBarData } from "../../common/db"
 import IncidentBarCard from "./IncidentBarCard"
-
+import  { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const IncidentBar = () => {
+
 
   const navigate = useNavigate();
   const handle = () => {
     navigate("/incidents/incidentBar/newIncidents");
   };
+  // animation part with aos
+  useEffect(() => {
+    AOS.init({ duration: 1500 ,
+      offset: 100,     
+      easing: 'ease-in-out'  
+  }); },[]);
   return (
-    <section>
+    <section data-aos="zoom-in">
     <div className="text-center mt-16">
       <h1 className="font-bold text-blackBold text-[32px]">
         Let&apos;s get started

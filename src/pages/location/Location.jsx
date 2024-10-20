@@ -11,6 +11,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Location = () => {
+  // animation part with aos
   useEffect(() => {
     AOS.init({ duration: 1500 ,
       offset: 100,     
