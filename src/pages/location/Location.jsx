@@ -6,7 +6,16 @@ import treePng from "../../assets/images/tree.png";
 import locationIcon from "../../assets/images/location-icon.png";
 import locationMap from "../../assets/images/location-map.png";
 
+import  { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Location = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1500 ,
+      offset: 100,     
+      easing: 'ease-in-out'  
+  }); },[]);
   return (
     <div>
       <Search
@@ -138,9 +147,9 @@ const Location = () => {
           </div>
         </div>
         {/* Google Map part */}
-        <div className="md:w-1/2 ms-5 w-[90%] flex flex-col justify-center items-start">
+        <div className="md:w-1/2 ms-5 w-[90%] flex flex-col justify-center items-start" >
           <p className="text-14 leading-6 text-grayBold mb-5">Incident Map</p>
-          <img src={locationMap} alt="" />
+          <img src={locationMap} alt="" data-aos="fade-left"/>
           <p className="text-14 leading-6 text-grayBold mb-5">
             Start 19.1232, -118.233 End 19.3245, -119.2323
           </p>

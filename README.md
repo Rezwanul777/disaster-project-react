@@ -1,8 +1,18 @@
-# React + Vite
+# React Project - Disaster Management System
+Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a Disaster Management System built using React.js. It includes various pages like Location and Incident, where users can view detailed information related to disaster management. The project also incorporates animations using the AOS (Animate on Scroll) library to enhance the user experience.
+Features
 
-Currently, two official plugins are available:
+    Location Page: Displays detailed information on various locations affected by disasters.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    Incident Page: Provides a summary of incidents, with dynamic AOS animations applied to the components.
+
+    AOS Animations: Smooth, scroll-based animations are added to components for an engaging user experience.
+
+    Responsive Design: Built with mobile-first design principles to ensure compatibility across various devices.
+
+    ## Instruction:git clone <repository-url>
+    cd disaster-project-react
+    npm install
+    Project Run:npm run dev
