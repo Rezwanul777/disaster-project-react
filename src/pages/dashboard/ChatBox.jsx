@@ -6,7 +6,7 @@ import Button from "../../common/Button";
 const ChatBox = () => {
     return (
       <>
-        <div className="bg-zinc-50 shadow-sm shadow-sky-300 rounded-[12px] lg:w-[331px] md:w-[285px] w-[250px]">
+        <div className="bg-zinc-50 shadow-sm shadow-sky-300 rounded-[12px] lg:w-[331px] md:w-[285px] w-[250px] ms-0">
           <div className="bg-orange rounded-t-[12px] lg:p-5 p-2">
             <h1 className="w-full font-bold text-[18px] text-zinc-50 tracking-[-1%]">
               Chat with Cypher
