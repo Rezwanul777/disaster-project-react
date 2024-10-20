@@ -13,6 +13,7 @@ import Location from './pages/location/Location.jsx';
 import IncidentBar from './pages/incidents/IncidentBar.jsx';
 import NewIncidents from './pages/incidents/NewIncidents.jsx';
 import NextPartIncidents from './pages/incidents/NextPartIncidents.jsx';
+import NewIncidentLocation from './pages/incidents/NewIncidentLocation.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
     {
       path:"/incidents/incidentBar/newIncidents/nextPartIncidents" ,
       element:<NextPartIncidents />
+    },
+    {
+      path:"/incidents/incidentBar/newIncidents/nextPartIncidents/location" ,
+      element:<NewIncidentLocation />
     },
     {
       path: "/location",

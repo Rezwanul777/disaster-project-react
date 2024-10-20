@@ -8,7 +8,7 @@ const NextPartIncidents = () => {
       navigate("/incidents/incidentBar/newIncidents");
     };
     const nextStep = () => {
-      navigate("/incidents/stepbar/newIncidents/describeIncidents/location");
+      navigate("/incidents/incidentBar/newIncidents/nextPartIncidents/location");
     };
     return (
       <div>
