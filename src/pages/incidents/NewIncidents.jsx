@@ -14,7 +14,7 @@ const NewIncidents = () => {
       navigate("/incidents/incidentBar/newIncidents/nextPartIncidents");
     };
     const stepBack = () => {
-        navigate("/incidents/incidentBar/newIncidents/");
+        navigate("/incidents/incidentBar/");
     }
   
     return (
